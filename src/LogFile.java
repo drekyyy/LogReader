@@ -114,7 +114,7 @@ public class LogFile {
         if (!timePassedList.isEmpty()) {
             System.out.println("Log file took " + getTimePassed() + " milliseconds to read.");
             System.out.println(getTimeScope());
-            System.out.println("Logs grouped by severity: " + getLogSeverityGrouped()+".");
+            System.out.println("Logs grouped by severity: " + getLogSeverityGrouped());
             //System.out.println(logFile.getLibsOccurrence()); // uncomment to print libs map, contains key: lib name and value: number of times it occured
             System.out.println("Unique libs occurrences: " + getLibsOccurrence().size()+".");
             System.out.println(getLogAnalysis()+".\n");
