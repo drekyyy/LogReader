@@ -21,7 +21,7 @@ public class LogFile {
      public void readFile(){
          try {
              Scanner myReader = new Scanner(file);
-             //System.out.println("file: "+file); //uncomment to print file
+             //System.out.println("file: "+file); //uncomment to print file name
 
              timePassed=System.currentTimeMillis();
              while (myReader.hasNextLine()){
@@ -118,6 +118,6 @@ public class LogFile {
             //System.out.println(logFile.getLibsOccurrence()); // uncomment to print libs map, contains key: lib name and value: number of times it occured
             System.out.println("Unique libs occurrences: " + getLibsOccurrence().size()+".");
             System.out.println(getLogAnalysis()+".\n");
-        } else System.out.println("File has no logs.\n");
+        } // else System.out.println("File has no logs.\n"); // uncomment to print that file has no logs (or just don't mention that file entirely)
     }
 }
